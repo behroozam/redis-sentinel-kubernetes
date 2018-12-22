@@ -15,6 +15,7 @@ spec:
       containers:
       - name: redis
         image: behroozam/redis:k8s
+        imagePullPolicy: Always
         ports:
         - containerPort: 6379
         resources:

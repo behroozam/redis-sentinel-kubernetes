@@ -16,6 +16,7 @@ spec:
       containers:
       - name: sentinel
         image: behroozam/redis:k8s
+        imagePullPolicy: Always
         env:
           - name: SENTINEL
             value: "true"

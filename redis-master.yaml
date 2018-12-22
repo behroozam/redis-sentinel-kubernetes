@@ -10,6 +10,7 @@ spec:
   containers:
     - name: master
       image: behroozam/redis:k8s
+      imagePullPolicy: Always
       env:
         - name: MASTER
           value: "true"
